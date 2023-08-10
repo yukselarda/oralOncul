@@ -1,0 +1,2178 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.hidden_time {
+    overflow: hidden;
+}
+
+.oral h1 {
+    color: #17B0D9;
+    text-align: none;
+    font-size: 2rem;
+}
+
+.oral a {
+    text-decoration: none;
+}
+
+.golge {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+}
+
+header a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    padding: 0 20px;
+    background-color: #fff;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    z-index: 3;
+    position: relative;
+}
+
+#brand {
+    font-weight: bold;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#brand a {
+    color: #09c372;
+}
+
+header ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header ul a {
+    color: white;
+    grid-area: 4rem;
+}
+
+header ul li {
+    padding: 5px;
+    margin-left: 10px;
+    position: relative;
+}
+
+header ul li:hover {
+    transition: 0.3s;
+}
+
+header ul li:hover a {
+    color: #17B0D9;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon .bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+    z-index: 99;
+    position: relative;
+}
+
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    align-items: center;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.mobile-menu li a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: black;
+}
+
+.mobile-menu li:hover {
+    transform: scale(1);
+}
+
+@media only screen and (max-width: 1100px) {
+    header nav {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+
+    .mobile-menu,
+    .banner {
+        z-index: 1;
+    }
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #000;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 75%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.hakkımda {
+    display: none;
+    position: relative;
+    top: 0rem;
+}
+
+.hakkımda_Servis:hover {
+    width: 6.2rem;
+    height: 2.2rem;
+    transform: scale(1);
+    transition: 1s;
+}
+
+.hakkımda_Servis:hover .hakkımda {
+    display: inline;
+}
+
+.hakkımda ul {
+    display: flex !important;
+    flex-wrap: wrap;
+    background: #f6f1f1;
+    border-radius: 5rem;
+    margin-left: -23rem;
+    padding: 0 0 0 0;
+    width: 50rem;
+}
+
+.hakkımda ul li:hover {
+    background: #17B0D9;
+    transform: scale(1);
+}
+
+.hakkımda ul li a {
+    color: #000 !important;
+}
+
+.hakkımda ul li:hover a {
+    color: white !important;
+}
+
+.hakkımda ul li {
+    width: 100%;
+    margin-left: 0 !important;
+    background: #f6f1f1;
+    height: 3.5rem !important;
+    text-align: center;
+    width: 25% !important;
+    margin-left: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hakkımda ul li a {
+    color: #000;
+}
+
+.btn {
+    border: none;
+    color: white;
+    border-radius: 1rem;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn2 {
+    background-color: #008CBA;
+    color: white;
+}
+
+.hakkımda_ul ul {
+    gap: 0;
+}
+
+.hakkımda_ul li {
+    background: white;
+    display: flex;
+    width: 13.75rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hakkımda_ul li:hover {
+    background: #008CBA;
+    width: 13.75rem;
+    height: 4rem;
+    color: #fff;
+    align-items: center;
+}
+
+.hakkımda_ul li:hover a {
+    color: white;
+    text-align: center;
+}
+
+.banner {
+    z-index: 1;
+    color: white;
+    width: 100%;
+    height: calc(100vh - 90px);
+}
+
+.banner_video video {
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: calc(100vh - 90px);
+    width: 100%;
+    z-index: -2;
+}
+
+.banner_video {
+    width: 100%;
+}
+
+.banner_video:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.banner_yazi {
+    position: relative;
+    z-index: 1;
+    width: 40%;
+    margin-left: 240px;
+}
+
+.banner .banner_yazi h1 {
+    font-size: 1.6rem;
+}
+
+.banner .banner_yazi p {
+    font-size: 1rem;
+}
+
+.yuvarlak {
+    position: absolute;
+    align-items: center;
+    left: 43rem;
+    top: auto;
+    bottom: auto;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+
+.yuvarlak img {
+    position: absolute;
+}
+
+.yuvarlak i {
+    position: relative;
+    top: 0.5rem;
+    color: #fff;
+}
+
+.bilgi {
+    position: relative;
+    background: url(img/scenery-sunburst-lake-mount-assiniboine-reflections-pine-tree-sunrise.png);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -2;
+}
+
+.bilgi:after {
+    content: "";
+    width: 100%;
+    height: -webkit-fill-available;
+    background: white;
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
+.bilgiler {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 1;
+}
+
+.bilgiler img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+}
+
+.bilgiler_orta img {
+    position: relative;
+    height: 100%;
+    opacity: 1;
+    z-index: 99;
+    top: 2rem;
+}
+
+.bilgiler_orta {
+    margin-right: 10rem;
+    z-index: 99;
+}
+
+.bilgiler_sag {
+    opacity: 1;
+    margin-top: 2rem;
+    z-index: 99;
+}
+
+.bilgiler_sol {
+    margin-top: 2rem;
+    opacity: 1;
+    z-index: 99;
+}
+
+.oral_arkaplan {
+    position: absolute;
+}
+
+.bilgi_card {
+    width: 222px;
+    height: 221px;
+    border-radius: 100%;
+    background: #0087ca;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.bilgi_card_bir {
+    background: linear-gradient(90deg, rgba(102, 98, 167, 1) 0%, rgba(51, 49, 84, 1) 100%) !important;
+    margin-left: 6rem;
+    transition: 2s;
+}
+
+.bilgi_card_iki {
+    background: linear-gradient(90deg, rgba(20, 108, 148, 1) 0%, rgba(10, 55, 75, 1) 50%, rgba(0, 0, 0, 1) 100%) !important;
+    transition: 2s;
+}
+
+.bilgi_card_uc {
+    background: linear-gradient(90deg, rgba(23, 176, 217, 1) 0%, rgba(12, 88, 109, 1) 100%) !important;
+    margin-left: 6rem;
+    transition: 2s;
+}
+
+.bilgi_card_dort {
+    background: linear-gradient(90deg, rgba(219, 200, 63, 1) 0%, rgba(110, 100, 32, 1) 100%) !important;
+    margin-left: -6rem;
+    transition: 2s;
+}
+
+.bilgi_card_bes {
+    background: linear-gradient(90deg, rgba(125, 195, 121, 1) 0%, rgba(63, 98, 61, 1) 100%) !important;
+    transition: 2s;
+}
+
+.bilgi_card_altı {
+    background: linear-gradient(90deg, rgba(113, 148, 186, 1) 0%, rgba(57, 74, 93, 1) 100%) !important;
+    margin-left: -6rem;
+    transition: 2s;
+}
+
+.bilgi_card_yazi {
+    text-align: center;
+}
+
+.bilgi_card_yazi h1 {
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.btn_bilgi {
+    background: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 0;
+}
+
+.btn_bilgi:hover {
+    background: white;
+    color: black;
+    border: 2px solid white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 0;
+}
+
+.bilgi_card_bir:hover {
+    transform: scale(1.1);
+}
+
+.bilgi_card_iki:hover {
+    transform: scale(1.1);
+}
+
+.bilgi_card_uc:hover {
+    transform: scale(1.1);
+}
+
+.bilgi_card_dort:hover {
+    transform: scale(1.1);
+}
+
+.bilgi_card_bes:hover {
+    transform: scale(1.1);
+}
+
+.bilgi_card_altı:hover {
+    transform: scale(1.1);
+}
+
+.bilgi_card_bir .btn_bilgi:hover {
+    color: #6662a7;
+}
+
+.bilgi_card_iki .btn_bilgi:hover {
+    color: #146c94;
+}
+
+.bilgi_card_uc .btn_bilgi:hover {
+    color: #17b0d9;
+}
+
+.bilgi_card_dort .btn_bilgi:hover {
+    color: #dbc83f;
+}
+
+.bilgi_card_bes .btn_bilgi:hover {
+    color: #7dc379;
+}
+
+.bilgi_card_altı .btn_bilgi:hover {
+    color: 7194ba;
+}
+
+.bilgi_card_iki {
+    background: linear-gradient(90deg, rgba(20, 108, 148, 1) 0%, rgba(10, 55, 75, 1) 50%, rgba(0, 0, 0, 1) 100%) !important;
+}
+
+.bilgi_card_uc {
+    background: linear-gradient(90deg, rgba(23, 176, 217, 1) 0%, rgba(12, 88, 109, 1) 100%) !important;
+    margin-left: 6rem;
+}
+
+.bilgi_card_dort {
+    background: linear-gradient(90deg, rgba(219, 200, 63, 1) 0%, rgba(110, 100, 32, 1) 100%) !important;
+    margin-left: -6rem;
+}
+
+.bilgi_card_bes {
+    background: linear-gradient(90deg, rgba(125, 195, 121, 1) 0%, rgba(63, 98, 61, 1) 100%) !important;
+}
+
+.bilgi_card_altı {
+    background: linear-gradient(90deg, rgba(113, 148, 186, 1) 0%, rgba(57, 74, 93, 1) 100%) !important;
+    margin-left: -6rem;
+}
+
+.istatistik {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.istatistikler {
+    width: 100%;
+    height: 280px;
+    background: linear-gradient(90deg, rgba(20, 108, 148, 1) 0%, rgba(10, 55, 75, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.count_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.count_arti {
+    display: flex;
+    align-items: flex-end;
+}
+
+.arti h1 {
+    font-size: 3.5rem;
+    color: #00C9FF;
+}
+
+.count {
+    color: #00C9FF;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: verdana;
+    float: left;
+    margin: 30px;
+    margin-bottom: 5px;
+}
+
+.count span {
+    color: white;
+}
+
+.basından_haberler {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 150px !important;
+    margin-right: 150px !important;
+}
+
+.basından_haberler h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.basından_haber {
+    display: flex;
+    align-items: center;
+    height: 40rem;
+}
+
+.basından_haberler .basından_haber .basın_cards .card {
+    border-radius: 2rem;
+    margin-bottom: 1.3rem;
+    box-shadow: 0 0 5px rgb(0 0 0/16%);
+}
+
+.basından_haberler .basından_haber .basın_cards .card .card-img-top {
+    border-radius: 2rem 2rem 0 0;
+}
+
+.basından_haberler .basından_haber .basın_cards .card .card-body .card-text {
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+}
+
+.swiper {
+    width: 100%;
+    height: 41rem;
+    border-radius: 2rem 2rem 2rem 2rem;
+    margin-top: -1rem;
+    padding: 1.7rem;
+    padding-top: 1rem;
+}
+
+.swiper img {
+    border-radius: 2rem 2rem 0 0;
+}
+
+.swiper-slide {
+    background: #fff;
+    height: fit-content;
+    box-shadow: 0 0 5px rgb(0 0 0/16%);
+    border-radius: 2rem 2rem 2rem 2rem;
+    height: 100% !important;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 82%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-right: auto;
+}
+
+.basın_cards {
+    width: 50%;
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+}
+
+.basın_card {
+    margin-left: 16rem;
+    margin-bottom: 3rem;
+    width: 60%;
+    height: 18rem;
+    background: white;
+
+}
+
+.basın_card img {
+    width: 100%;
+}
+
+.basın_card_yazi {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.swiper_yazi {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+.swiper_yazi {
+    color: #17B0D9;
+}
+
+.swiper_sol_yazi {
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    width: 85%;
+}
+
+.swiper_yazi p {
+    font-size: 1.3rem;
+}
+
+.swiper_sag_yazi p {
+    font-size: 1.05rem;
+    color: #17B0D9;
+}
+
+.swiper_sag_yazi a {
+    display: flex;
+    align-items: center;
+}
+
+.swiper_sag_yazi i {
+    margin-top: -0.75rem;
+    color: #17B0D9;
+}
+
+.swiper-pagination-bullet {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.swiper-pagination .swiper-pagination-clickable .swiper-pagination-bullets .swiper-pagination-horizontal {
+    margin-top: 5rem !important;
+    position: absolute;
+    z-index: 99;
+}
+
+.swiper-button-prev {
+    margin-top: -5rem;
+    display: none;
+}
+
+.swiper-button-next {
+    margin-top: -5rem;
+    display: none;
+}
+
+.soru {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: url(img/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    z-index: -2;
+}
+
+.soru:after {
+    content: "";
+    width: 100%;
+    height: -webkit-fill-available;
+    background: black;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.soru-cevap {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.soru_sol {
+    position: relative;
+    z-index: 1;
+    top: 15rem;
+    left: 0;
+    color: white;
+    width: 540px;
+    height: fit-content;
+}
+
+.soru_sol h2 {
+    font-size: 2rem;
+}
+
+.soru_sol p {
+    font-size: 1.2rem;
+}
+
+.soru_sag {
+    position: relative;
+    right: 0;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    color: white;
+}
+
+.dikdortgen {
+    width: 484px;
+    height: 80%;
+    background: #146C94;
+    border-radius: 0 0 15rem 15rem;
+    overflow: hidden;
+}
+
+.dikdortgen img {
+    opacity: 1;
+    width: 484px;
+    height: 691px;
+    top: 5rem;
+    position: relative;
+}
+
+.calisma_alanlari {
+    position: relative;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+}
+
+
+.calisma_alanlari h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.calisma {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calisma_card {
+    width: 340px;
+    height: 357px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20rem;
+}
+
+.calisma .card {
+    overflow: hidden;
+    box-shadow: 0 0 5px rgb(0 0 0/16%);
+}
+
+.calisma_gorsel {
+    width: 100%;
+    height: 300px;
+}
+
+.calisma_gorsel img {
+    object-fit: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.calisma_alanlari .calisma .card {
+    text-align: center;
+    border-radius: 2rem 2rem 2rem 2rem;
+}
+
+.calisma_alanlari .calisma .card h2 {
+    font-size: 1.5rem;
+}
+
+.calisma_alanlari .calisma .card .card-body {
+    transition: 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calisma_alanlari .calisma .card:hover .card-body {
+    background: #17B0D9;
+    border-radius: 0rem 0rem 2rem 2rem;
+}
+
+.calisma_alanlari .calisma .card img {
+    border-radius: 2rem 2rem 0 0;
+}
+
+.calisma_yazi {
+    background: white;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+}
+
+.sec-center {
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    z-index: 200;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dark-light:checked+label,
+.dark-light:not(:checked)+label {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    z-index: 20000;
+    display: block;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    transition: all 200ms linear;
+    box-shadow: 0 0 25px rgba(255, 235, 167, .45);
+}
+
+.dark-light:checked+label {
+    transform: rotate(360deg);
+}
+
+.dark-light:checked+label:after,
+.dark-light:not(:checked)+label:after {
+    position: absolute;
+    content: '';
+    top: 1px;
+    left: 1px;
+    overflow: hidden;
+    z-index: 2;
+    display: block;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: #102770;
+    background-image: url('https://assets.codepen.io/1462889/moon.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 200ms linear;
+    opacity: 0;
+}
+
+.dark-light:checked+label:after {
+    opacity: 1;
+}
+
+.dark-light:checked+label:before,
+.dark-light:not(:checked)+label:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+    display: block;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    background-color: #48dbfb;
+    background-image: url('https://assets.codepen.io/1462889/sun.svg');
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 200ms linear;
+}
+
+.dark-light:checked+label:before {
+    background-color: #000;
+}
+
+.light-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    overflow: hidden;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 4%;
+    height: 100%;
+    width: 100%;
+    transition: all 200ms linear;
+    opacity: 0;
+}
+
+.dark-light:checked~.light-back {
+    opacity: 1;
+}
+
+.dropdown:checked+label,
+.dropdown:not(:checked)+label {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 2;
+    height: 50px;
+    transition: all 200ms linear;
+    border-radius: 4px;
+    width: 220px;
+    letter-spacing: 1px;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    text-align: center;
+    border: none;
+    background-color: #ffeba7;
+    cursor: pointer;
+    color: #102770;
+    box-shadow: 0 12px 35px 0 rgba(255, 235, 167, .15);
+}
+
+.dropdown:checked+label:before,
+.dropdown:not(:checked)+label:before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.dropdown:checked+label:before {
+    pointer-events: auto;
+}
+
+.dropdown:not(:checked)+label .uil {
+    font-size: 24px;
+    margin-left: 10px;
+    transition: transform 200ms linear;
+}
+
+.dropdown:checked+label .uil {
+    transform: rotate(180deg);
+    font-size: 24px;
+    margin-left: 10px;
+    transition: transform 200ms linear;
+}
+
+.section-dropdown {
+    position: absolute;
+    padding: 5px;
+    background-color: #111;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+    box-shadow: 0 14px 35px 0 rgba(9, 9, 12, 0.4);
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: all 200ms linear;
+}
+
+.dark-light:checked~.sec-center .section-dropdown {
+    background-color: #fff;
+    box-shadow: 0 14px 35px 0 rgba(9, 9, 12, 0.15);
+}
+
+.dropdown:checked~.section-dropdown {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.section-dropdown:before {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    content: '';
+    display: block;
+    z-index: 1;
+}
+
+.section-dropdown:after {
+    position: absolute;
+    top: -7px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #111;
+    content: '';
+    display: block;
+    z-index: 2;
+    transition: all 200ms linear;
+}
+
+.dark-light:checked~.sec-center .section-dropdown:after {
+    border-bottom: 8px solid #fff;
+}
+
+.section-dropdown-sub a {
+    position: relative;
+    color: black;
+    transition: all 200ms linear;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    padding: 5px 0;
+    padding-left: 20px;
+    padding-right: 15px;
+    margin: 2px 0;
+    text-decoration: none;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    -ms-flex-pack: distribute;
+}
+
+
+.dropdown-sub+label,
+.dropdown-sub+label {
+    position: relative;
+    color: #000;
+    transition: all 200ms linear;
+    border-radius: 2px;
+    font-size: 1.7rem;
+    padding: 5px 0;
+    padding-left: 20px;
+    padding-right: 15px;
+    text-align: left;
+    text-decoration: none;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    -ms-flex-pack: distribute;
+    cursor: pointer;
+}
+
+.dropdown-sub:checked+label .uil,
+.dropdown-sub:not(:checked)+label .uil {
+    font-size: 22px;
+}
+
+.dropdown-sub:not(:checked)+label .uil {
+    transition: transform 200ms linear;
+}
+
+.dropdown-sub:checked+label .uil {
+    transform: rotate(135deg);
+    transition: transform 200ms linear;
+}
+
+.dropdown-sub:checked+label:hover,
+.dropdown-sub:not(:checked)+label:hover {
+    color: black;
+}
+
+.section-dropdown-sub {
+    position: relative;
+    display: block;
+    width: 100%;
+    pointer-events: none;
+    opacity: 0;
+    max-height: 0;
+    padding-left: 10px;
+    padding-right: 3px;
+    overflow: hidden;
+    transition: all 200ms linear;
+
+}
+
+.dropdown-sub:checked~.section-dropdown-sub {
+    pointer-events: auto;
+    opacity: 1;
+    max-height: 999px;
+}
+
+.calisma_card:hover .calisma_yazi {
+    background: #17B0D9;
+}
+
+.calisma_alanlari h2 {
+    color: #000;
+    transition: 0.7s;
+}
+
+.calisma_alanlari .card:hover h2 {
+    color: white;
+}
+
+.manzara {
+    position: relative;
+    margin-top: 2rem;
+
+}
+
+.manzara_tirnak {
+    background: url(img/scenery-sunburst-lake-mount-assiniboine-reflections-pine-tree-sunrise.png);
+    background-attachment: fixed;
+    height: 50vh;
+    background-size: cover;
+    z-index: -2;
+    position: relative;
+}
+
+.manzara_tirnak:after {
+    content: "";
+    width: 100%;
+    height: -webkit-fill-available;
+    background: black;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.manzara_tirnak .golge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.manzara_tirnak .golge {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: relative;
+}
+
+.tirnak_yazi {
+    color: white;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.tirnak_yazi p {
+    width: 50%;
+    font-size: 1.75rem;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.yararli_bilgiler {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2rem;
+}
+
+.yararli_bilgiler h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.yararli_bilgi {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.yararli_bilgiler .yararli_bilgi .yararli_bilgi_sol .card {
+    border-radius: 2rem 2rem 2rem 2rem;
+    box-shadow: 0 0 5px rgb(0 0 0/16%);
+}
+
+.yararli_bilgiler .yararli_bilgi .yararli_bilgi_sag .card .row {
+    height: 100%;
+}
+
+.yararli_bilgiler .yararli_bilgi .yararli_bilgi_sag .card {
+    box-shadow: 0 0 5px rgb(0 0 0/16%);
+    margin-left: 1rem;
+}
+
+.yararli_bilgiler .yararli_bilgi .yararli_bilgi_sag .card .img-fluid {
+    height: 100%;
+}
+
+.yararli_bilgi_sol_card {
+    width: 684px;
+    height: 543px;
+    background: white;
+}
+
+.yararli_bilgi .yararli_bilgi_sol .card-body .card-text {
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+}
+
+.yararli_bilgi_sol {
+    width: 50%;
+}
+
+.yararli_bilgi_sag {
+    width: 50%;
+}
+
+.yararli_bilgi_sol_card_yazi {
+    width: 70%;
+}
+
+.yararli_bilgi_sol_card_yazi h2 {
+    font-size: 1.9rem;
+}
+
+.yararli_bilgi_sol_card_yazi p {
+    font-size: 1.3rem;
+}
+
+.yararli_bilgi_sag_card {
+    width: 724px;
+    height: 256px;
+    background: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.yararli_bilgi_sag_card_yazi {
+    width: 50%;
+    margin-left: 1rem;
+}
+
+.yararli_bilgi_sag_card_yazi h2 {
+    font-size: 1.9rem;
+}
+
+.aktivite {
+    position: relative;
+    background: url(img/beautiful-scenery-road-forest-with-lot-colorful-autumn-trees\ \(1\).png);
+    background-attachment: fixed;
+    height: auto;
+    z-index: 1;
+    background-repeat: round;
+    padding-bottom: 4rem;
+}
+
+.aktivite:after {
+    content: "";
+    width: 100%;
+    height: -webkit-fill-available;
+    background: black;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.video_galeri h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.video_ust {
+    display: flex;
+}
+
+.slick-prev {
+    left: 10rem !important;
+    top: 10rem;
+    position: absolute;
+    z-index: 99;
+}
+
+.slick-prev::before {
+    content: '<';
+    color: #fff;
+    opacity: 1;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.slick-next {
+    right: 12rem !important;
+    top: 10rem;
+    position: absolute;
+    z-index: 99;
+}
+
+.slick-next::before {
+    content: '>';
+    color: #fff;
+    opacity: 1;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.aktivite h1 {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.aktivite_card {
+    margin: 0 4rem;
+    opacity: 0.4;
+    height: 30rem;
+    background: none;
+    transition: 1.3s;
+    background: #fff;
+    border-radius: 2rem 2rem 2rem 2rem;
+}
+
+.aktivite_yazi {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.aktivite_yazi_sol {
+    width: 80%;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5;
+}
+
+.aktivite_yazi_sag i {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.aktivite_yazi_sag {
+    height: 100%;
+}
+
+.slick-center {
+    opacity: 1;
+    transition: 1.3s;
+    background: #fff;
+    position: relative;
+    z-index: 8;
+}
+
+.aktivite_card img {
+    width: 100%;
+    height: 21rem;
+    object-fit: cover;
+    border-radius: 2rem 2rem 0rem 0rem;
+}
+
+.uye_kurulus h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.uye_cards {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.uye_kurulus .uye_cards .uye_card {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: max-content !important;
+    height: 3rem;
+    padding-top: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0;
+    background: #F6F1F1;
+    text-align: center;
+    vertical-align: middle;
+    color: gray;
+    border-radius: 2rem;
+}
+
+.uye_kurulus .uye_cards .uye_card p {
+    margin-top: 0.5rem;
+}
+
+.uye_kurulus .uye_cards .uye_card:hover {
+    transition: 0.6s;
+    background: #17B0D9;
+    color: #fff;
+}
+
+.bize_ulasin {
+    background: #f6f1f1;
+}
+
+.ulasin {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.bize_ulasin .ulasin h4 {
+    font-size: 1.4;
+    color: #17B0D9;
+}
+
+.bize_ulasin .ulasin .ulasin_sol {
+    width: 25%;
+}
+
+.bize_ulasin .ulasin .ulasin_orta_bir {
+    width: 25%;
+}
+
+.bize_ulasin .ulasin .ulasin_orta_iki {
+    width: 25%;
+}
+
+.bize_ulasin .ulasin .ulasin_sag {
+    width: 25%;
+}
+
+.bize_ulasin .ulasin ul li:hover a {
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.bize_ulasin .ulasin ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.footer_mavi {
+    background: linear-gradient(90deg, rgba(23, 176, 217, 1) 0%, rgba(12, 88, 109, 1) 100%);
+    width: 100%;
+    height: 2.5rem;
+}
+
+.footer_yazi {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+}
+
+.footer_yazi h4 {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.footer_responsive_iki {
+    position: absolute;
+    left: 0;
+    margin-left: 10%;
+}
+
+.banner:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .25;
+    z-index: 1;
+}
+
+.banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner_content {
+    position: relative;
+    z-index: 2;
+}
+
+
+.banner_content p {
+    color: white;
+}
+
+.banner_item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_item .banner_button a {
+    color: white;
+}
+
+.banner_item_yazi {
+    width: 50%;
+}
+
+.banner_content,
+.banner .container,
+.banner_item {
+    height: 100%;
+}
+
+.banner_content a {
+    transition: 5s;
+}
+
+.blue_point {
+    width: 7rem;
+    height: 3rem;
+    background-color: #17B0D9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50rem 50rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue_point i {
+    animation: alt_ust 1.5s infinite backwards;
+}
+
+.ulasin ul li a {
+    color: black;
+}
+
+.sosyal {
+    display: flex;
+}
+
+.sosyal i {
+    color: #000;
+}
+
+.ulasin .ulasin_sag li i {
+    color: #17B0D9;
+}
+
+.ulasin .ulasin_sag li {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.ulasin .ulasin_sag li a {
+    margin-left: 1.5rem;
+}
+
+@keyframes alt_ust {
+    0% {
+        transform: translateY(.2rem);
+    }
+
+    50% {
+        transform: translateY(-.2rem);
+    }
+
+    100% {
+        transform: translateY(.2rem);
+    }
+}
+
+@media only screen and (max-width:1400px) {
+    .slick-track {
+        width: 7000px !important;
+    }
+}
+
+@media only screen and (max-width:1169px) {
+    .bilgiler_orta img {
+        display: none;
+    }
+
+    .bilgiler_sol {
+        margin-top: 2rem;
+    }
+
+    .bilgiler_sag {
+        margin-top: 2rem;
+    }
+
+    .bilgi_card_bir {
+        margin-left: 0rem;
+    }
+
+    .bilgi_card_uc {
+        margin-left: 0rem;
+    }
+
+    .bilgi_card_dort {
+        margin-left: 0rem;
+    }
+
+    .bilgi_card_altı {
+        margin-left: 0rem;
+    }
+
+    .istatistikler {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .basından_haber {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .basın_cards {
+        margin-left: auto;
+        width: 80%;
+        margin-right: auto;
+    }
+
+    .basından_haberler {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .basından_haberler .basından_haber .basın_cards .card {
+        margin-bottom: 3rem;
+    }
+
+
+    .swiper {
+        width: 84%;
+        height: 52vh;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.8rem;
+    }
+
+    .swiper-slide img {
+        height: 65%;
+    }
+
+    .swiper_sol_yazi {
+        width: 90%;
+    }
+
+    .swiper-horizontal.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        margin-bottom: -1rem;
+    }
+
+    .dikdortgen {
+        display: none;
+    }
+
+    .soru_sol {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        left: 0;
+        text-align: center;
+        top: 0;
+        height: 100%;
+    }
+
+    .calisma_alanlari .calisma .card {
+        width: 48% !important;
+    }
+
+    .calisma {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .manzara_tirnak .golge img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+
+
+    .tirnak_yazi p {
+        font-size: 1.5rem;
+        height: 100%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .yararli_bilgi {
+        flex-direction: column;
+    }
+
+    .yararli_bilgi_sol {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .yararli_bilgi_sag {
+        width: 90% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .yararli_bilgiler .yararli_bilgi .yararli_bilgi_sag .card .img-fluid {
+        height: 100%;
+        width: 100%;
+    }
+
+    .yararli_bilgiler .yararli_bilgi .yararli_bilgi_sag .card {
+        margin-left: 0rem;
+    }
+
+    .ulasin {
+        flex-wrap: wrap;
+    }
+
+    .ulasin .ulasin_sol {
+        width: 50%;
+    }
+
+    .ulasin .ulasin_orta_bir {
+        width: 50%;
+    }
+
+    .ulasin .ulasin_orta_iki {
+        width: 50%;
+    }
+
+    .ulasin .ulasin_sag {
+        width: 100% !important;
+        margin-top: 1rem;
+    }
+
+    .ulasin ul li a {
+        color: black;
+    }
+
+    .footer_mavi {
+        height: auto;
+    }
+
+    .footer_yazi {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+
+    .footer_responsive {
+        margin-bottom: 4.5rem;
+        margin-top: 1rem;
+    }
+
+    .footer_responsive_iki {
+        margin-top: 2.5rem;
+        margin-left: 0;
+        position: none;
+        text-align: center;
+        left: auto;
+    }
+
+    .sosyal {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .yararli_bilgiler .yararli_bilgi .yararli_bilgi_sag .card .mb-3 {
+        border-radius: 2rem 2rem 2rem 2rem;
+    }
+
+    .ulasin .ulasin_sol {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .ulasin .ulasin_orta_bir {
+        width: 50%;
+    }
+
+    .ulasin .ulasin_orta_iki {
+        width: 50%;
+    }
+
+    .ulasin .ulasin_sag {
+        width: 100% !important;
+        margin-top: 0;
+    }
+
+    .ulasin {
+        gap: 2rem;
+    }
+
+    .footer_responsive {
+        margin-bottom: 4.5rem;
+        margin-top: 1rem;
+    }
+
+    .footer_responsive_iki {
+        margin-top: 2rem;
+        margin-left: 0;
+        position: none;
+        text-align: center;
+        left: auto;
+    }
+
+    .yararli_bilgiler .yararli_bilgi_sag .card .row .col-sm-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 11rem;
+    }
+
+    .yararli_bilgiler .yararli_bilgi .yararli_bilgi_sag .card .img-fluid {
+        border-radius: 1rem 1rem 0 0 !important;
+
+    }
+
+    .swiper-slide img {
+        height: 70%;
+    }
+
+}
+
+@media only screen and (max-width:685px) {
+    .banner_item {
+        align-items: center;
+    }
+
+    .banner_item_yazi {
+        width: 70%;
+        text-align: center;
+    }
+
+    .bilgiler {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bilgi_card {
+        width: 100%;
+        height: 221px;
+        border-radius: 2rem;
+        background: #0087ca;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+    }
+
+    .bilgiler_sol {
+        width: 90%;
+    }
+
+    .bilgiler_sag {
+        width: 90%;
+        margin-top: 0rem;
+    }
+
+    .bilgi_card_bir:hover {
+        transform: scale(1);
+    }
+
+    .bilgi_card_iki:hover {
+        transform: scale(1);
+    }
+
+    .bilgi_card_uc:hover {
+        transform: scale(1);
+    }
+
+    .bilgi_card_dort:hover {
+        transform: scale(1);
+    }
+
+    .bilgi_card_bes:hover {
+        transform: scale(1);
+    }
+
+    .bilgi_card_altı:hover {
+        transform: scale(1);
+    }
+
+    .calisma_alanlari {
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+
+    .calisma_alanlari .calisma .card {
+        width: 67% !important;
+        height: 22rem !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .calisma {
+        flex-wrap: nowrap !important;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .tirnak_yazi p {
+        font-size: 1.2rem;
+    }
+
+    .aktivite_card {
+        width: 20rem;
+    }
+
+    .tirnak_yazi i {
+        font-size: 1.6rem !important;
+    }
+
+    .footer_responsive {
+        margin-bottom: 4.5rem;
+        margin-top: 1rem;
+    }
+
+    .footer_responsive_iki {
+        margin-left: 0;
+        position: none;
+        text-align: center;
+        left: auto;
+    }
+
+    .swiper-slide img {
+        height: 60%;
+    }
+
+    .swiper_yazi {
+        flex-direction: column;
+    }
+
+    .swiper_sag_yazi {
+        width: 100%;
+    }
+
+    .swiper_sol_yazi {
+        width: 100%;
+    }
+
+    .swiper_sol_yazi p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .swiper-slide img {
+        height: 60%;
+    }
+}
+
+
+@media only screen and (max-width:550px) {
+    .swiper-slide img {
+        height: 60%;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    footer .footer_mavi .footer_yazi h4 {
+        font-size: 1.2rem;
+    }
+
+    .yararli_bilgiler .yararli_bilgi .yararli_bilgi_sol .card img {
+        height: 11rem;
+    }
+}
+
+@media only screen and (max-width:290px) {
+    .tirnak_yazi p {
+        width: 90%;
+        height: 100%;
+        font-size: 0.8rem;
+    }
+}

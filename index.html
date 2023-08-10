@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Mustafa Oral Öncül</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="oral" id="brand"><a href="/">
+                <h1>Dr. Mustafa Oral Öncül</h1>
+            </a></div>
+        <nav>
+            <ul>
+                <li class=""><a class="hover-underline-animation active" href="#anasayfa">Anasayfa</a></li>
+                <li class="hakkımda_Servis"><a class="hover-underline-animation" href="#hakkımda">Hakkımda <i
+                            class="fa-solid fa-angle-down"></i></a>
+                    <div class="hakkımda">
+                        <ul style="display: flex; flex-wrap: wrap; gap: 0; align-items: center; border-radius: 2rem;">
+
+                            <li><a href="#">Özgeçmiş</a></li>
+                            <li><a href="#">Akademik Yayınlar</a></li>
+                            <li><a href="#">Projeler</a></li>
+                            <li><a href="#">Ad Scientifi index Verileri</a></li>
+                            <li style="border-radius: 0 0 0 1rem;"><a href="#">Kitap ve Kitap Bölümleri</a></li>
+                            <li><a href="#">Sunumlar</a></li>
+                            <li><a href="#">Patentler</a></li>
+                            <li style="border-radius: 0 0 1rem 0;"><a href="#">Üye Olduğu Kuruluşlar</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="hover-underline-animation" href="#faaliyetler">Faaliyetler</a></li>
+                <li><a class="hover-underline-animation" href="#videoGaleri">Video Galeri</a></li>
+                <li><a class="hover-underline-animation" href="#basındanHaberler">Basından Haberler</a></li>
+                <li><a class="hover-underline-animation" href="#ilesisim">İletişim</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="/home">AnaSayfa</a></li>
+                <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
+                <label class="for-dropdown-sub" for="dropdown-sub"> Hakkımda <i
+                        class="fa-solid fa-angle-down"></i></label>
+                <div class="section-dropdown-sub">
+                    <a href="#">Özgeçmiş <i class="uil uil-arrow-right"></i></a>
+                    <a href="#">Akademik Yayınlar <i class="uil uil-arrow-right"></i></a>
+                    <a href="#">Projeler <i class="uil uil-arrow-right"></i></a>
+                    <a href="#">Ad Scientifi index Verileri <i class="uil uil-arrow-right"></i></a>
+                    <a href="#">Kitap ve Kitap Bölümleri <i class="uil uil-arrow-right"></i></a>
+                    <a href="#">Sunumla <i class="uil uil-arrow-right"></i></a>
+                    <a href="#">Patentler <i class="uil uil-arrow-right"></i></a>
+                    <a href="#">Üye Olduğu Kuruluşlar <i class="uil uil-arrow-right"></i></a>
+                </div>
+                <li><a href="#">Faaliyetler</a></li>
+                <li><a href="#">Video Galeri</a></li>
+                <li><a href="#">Basından Habeler</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- <header>
+        <div class="oral">
+            <a href="">
+                <h1>Dr. Mustafa Oral Öncül</h1>
+            </a>
+        </div> 
+
+        <nav>
+            <ul>
+                <li class="active"><a href="#anasayfa">Anasayfa</a></li>
+                <li><i class="fa-solid fa-circle fa-2xs" style="color: #ffffff; font-size:0.4rem;"></i><a
+                        href="#contact">Hakkımızda</a></li>
+                <li class="hizmet-servis"><i class="fa-solid fa-circle fa-2xs"
+                        style="color: #ffffff; font-size:0.4rem;"></i><a href="#courses">Hizmetlerimiz <i
+                            class="fa-solid fa-angle-right active_two"></i></a>
+                            <div class="hakkımda">
+                                <ul style="display: flex; flex-wrap: wrap; gap: 0; align-items: center;">
+        
+                                    <li><a href="#">Özgeçmiş</a></li>
+                                    <li><a href="#">Akademik Yayınlar</a></li>
+                                    <li><a href="#">Projeler</a></li>
+                                    <li><a href="#">Ad Scientifi index Verileri</a></li>
+                                    <li><a href="#">Kitap ve Kitap Bölümleri</a></li>
+                                    <li><a href="#">Sunumlar</a></li>
+                                    <li><a href="#">Patentler</a></li>
+                                    <li><a href="#">Üye Olduğu Kuruluşlar</a></li>
+                                </ul>
+                            </div>
+                </li>
+                <li><i class="fa-solid fa-circle fa-2xs" style="color: #ffffff; font-size:0.4rem;"></i><a
+                        href="#contact">Blog</a></li>
+                <li><i class="fa-solid fa-circle fa-2xs" style="color: #ffffff; font-size:0.4rem;"></i><a
+                        href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a class="mobile-active" href="/home"><img src="img/Logo.png" alt=""></a></li>
+                <li><a href="/products">Anasayfa</a></li>
+                <li><a href="/about">Hakkımda</a></li>
+                <li class="servis-hizmet"><a href="/about">Hizmetlerimiz</a>
+                    <div class="hizmetlerimiz">
+                        <ul>
+                            <li><a href="#">Web Tasarım</a></li>
+                            <li><a href="#">IP Sanal Adres</a></li>
+                            <li><a href="#">Yazılım</a></li>
+                            <li><a href="#">Sosyal Medya Yönetimi</a></li>
+                            <li><a href="#">Web Site Yönetimimi</a></li>
+                            <li><a href="#">Editoryal Çalışmalar</a></li>
+                            <li><a href="#">SEO</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="/about">Blog</a></li>
+                <li><a href="/about">İletişim</a></li>
+
+            </ul>
+        </div>
+
+         <nav>
+            <ul>
+                <li class=""><a class="hover-underline-animation active" href="#anasayfa">Anasayfa</a></li>
+                <li class="hakkımda_Servis hover-underline-animation"><a class="hover-underline-animation"
+                        href="#hakkımda">Hakkımda <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="hakkımda">
+                        <ul style="display: flex; flex-wrap: wrap; gap: 0; align-items: center;">
+
+                            <li><a href="#">Özgeçmiş</a></li>
+                            <li><a href="#">Akademik Yayınlar</a></li>
+                            <li><a href="#">Projeler</a></li>
+                            <li><a href="#">Ad Scientifi index Verileri</a></li>
+                            <li><a href="#">Kitap ve Kitap Bölümleri</a></li>
+                            <li><a href="#">Sunumlar</a></li>
+                            <li><a href="#">Patentler</a></li>
+                            <li><a href="#">Üye Olduğu Kuruluşlar</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="hover-underline-animation" href="#faaliyetler">Faaliyetler</a></li>
+                <li><a class="hover-underline-animation" href="#videoGaleri">Video Galeri</a></li>
+                <li><a class="hover-underline-animation" href="#basındanHaberler">Basından Haberler</a></li>
+                <li><a class="hover-underline-animation" href="#ilesisim">İletişim</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a class="mobile-active" href="/home"><img src="img/Logo.png" alt=""></a></li>
+                <li><a href="/products">Anasayfa</a></li>
+                <li><a href="/about">Hakkımda</a></li>
+                <li class="servis-hizmet"><a href="/about">Hizmetlerimiz</a>
+                    <div class="hizmetlerimiz">
+                        <ul>
+                            <li><a href="#">Web Tasarım</a></li>
+                            <li><a href="#">IP Sanal Adres</a></li>
+                            <li><a href="#">Yazılım</a></li>
+                            <li><a href="#">Sosyal Medya Yönetimi</a></li>
+                            <li><a href="#">Web Site Yönetimimi</a></li>
+                            <li><a href="#">Editoryal Çalışmalar</a></li>
+                            <li><a href="#">SEO</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="/about">Blog</a></li>
+                <li><a href="/about">İletişim</a></li>
+
+            </ul>
+        </div> 
+    </header> -->
+    <div class="banner">
+        <!-- <div class="banne4r_video">
+            <video src="img/Dr. Oral Oncul Doga.mp4" loop muted autoplay>
+            </video>
+        </div>
+
+        <div class="banner_yazi">
+            <h1>lorem Ipsum</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam libero inventore impedit, provident
+                voluptatibus corrupti expedita et a exercitationem recusandae harum ratione quo assumenda voluptate!
+                Enim magni hic perferendis a.</p>
+            <button class="btn btn2">Detaylı Bilgi</button>
+        </div>
+
+        <div class="yuvarlak">
+            <img src="img/Subtraction 1.png" alt="">
+            <i class="fa-solid fa-angle-down fa-2xl "></i>
+        </div> -->
+
+        <video src="img/Dr. Oral Oncul Doga.mp4" loop muted autoplay></video>
+        <div class="banner_content">
+            <div class="container">
+                <div class="banner_item">
+                    <div class="banner_item_yazi">
+                        <h2>
+                            Lorem, ipsum
+                        </h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, nostrum dolore dolores rem
+                            ratione
+                            fugit ab explicabo aut consequuntur, iste quia quo in aspernatur fuga repellendus debitis.
+                            Ad,
+                            hic et?</p>
+                    </div>
+                    <div class="banner_button">
+                        <button type="button" class="btn btn-primary btn-lg"><a href="">Detaylı Bilgi</a></button>
+                    </div>
+                </div>
+            </div>
+            <a href="#gel">
+                <div class="blue_point">
+                    <i class="fa-solid fa-angle-down" style="
+                font-size: 1.9rem; color: white;
+            "></i>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <section class="main">
+        <section class="bilgi">
+            <div id="gel" class="bilgiler">
+                <div class="bilgiler_sol">
+                    <div class="bilgi_card bilgi_card_bir">
+                        <div class="bilgi_card_yazi">
+                            <h1>Aldığı Ödüller</h1>
+                            <button class="btn btn_bilgi">Detaylı Bilgi</button>
+                        </div>
+                    </div>
+                    <div class="bilgi_card bilgi_card_iki">
+                        <div class="bilgi_card_yazi">
+                            <h1>Bulunduğu <br> Görevler</h1>
+                            <button class="btn btn_bilgi">Detaylı Bilgi</button>
+                        </div>
+                    </div>
+                    <div class="bilgi_card bilgi_card_uc">
+                        <div class="bilgi_card_yazi">
+                            <h1>Eğitim</h1>
+                            <button class="btn btn_bilgi">Detaylı Bilgi</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bilgiler_orta">
+                    <img src="img/pngegg (2).png" alt="">
+                </div>
+                <div class="bilgiler_sag">
+                    <div class="bilgi_card bilgi_card_dort">
+                        <div class="bilgi_card_yazi">
+                            <h1>Lisanslar ve Sertifikalar</h1>
+                            <button class="btn btn_bilgi">Detaylı Bilgi</button>
+                        </div>
+                    </div>
+                    <div class="bilgi_card bilgi_card_bes">
+                        <div class="bilgi_card_yazi">
+                            <h1>Üye Olduğu Dernekler</h1>
+                            <button class="btn btn_bilgi">Detaylı Bilgi</button>
+                        </div>
+                    </div>
+                    <div class="bilgi_card bilgi_card_altı">
+                        <div class="bilgi_card_yazi">
+                            <h1>Yöneticilikleri</h1>
+                            <button class="btn btn_bilgi">Detaylı Bilgi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="istatistik">
+            <div class="istatistikler">
+                <div class="count_item">
+                    <div class="count"><span>100</span>+</div>
+                    <h4>Lorem, ipsum.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+                <div class="count_item">
+                    <div class="count"><span>500</span>+</div>
+                    <h4>Lorem, ipsum.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+                <div class="count_item">
+                    <div class="count"><span>70</span>+</div>
+                    <h4>Lorem, ipsum.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+
+                <div class="count_item">
+                    <div class="count"><span>224</span>+</div>
+                    <h4>Lorem, ipsum.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="basından_haberler">
+            <h1>Basından Haberler</h1>
+            <div class="basından_haber">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/20200414_2_41891326_53925808_Web.png" alt="">
+                            <div class="swiper_yazi">
+                                <div class="swiper_sol_yazi">
+                                    <span>24.04.2023</span>
+                                    <p>İstanbul Tıp Fakültesi Hastanesi'nde <br>
+                                        hastalar böyle tedavi ediliyor
+                                    </p>
+                                </div>
+                                <div class="swiper_sag_yazi">
+                                    <a href="">
+                                        <p>Devamını Oku</p> <i class="fa-solid fa-angle-right fa-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="img/landscape-lake-surrounded-by-mountains.png" alt="">
+                            <div class="swiper_yazi">
+                                <div class="swiper_sol_yazi">
+                                    <span>24.04.2023</span>
+                                    <p>İstanbul Tıp Fakültesi Hastanesi'nde <br>
+                                        hastalar böyle tedavi ediliyor
+                                    </p>
+                                </div>
+                                <div class="swiper_sag_yazi">
+                                    <a href="">
+                                        <p>Devamını Oku</p> <i class="fa-solid fa-angle-right fa-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="img/landscape-lake-surrounded-by-mountains@2x.png" alt="">
+                            <div class="swiper_yazi">
+                                <div class="swiper_sol_yazi">
+                                    <span>24.04.2023</span>
+                                    <p>İstanbul Tıp Fakültesi Hastanesi'nde <br>
+                                        hastalar böyle tedavi ediliyor
+                                    </p>
+                                </div>
+                                <div class="swiper_sag_yazi">
+                                    <a href="">
+                                        <p>Devamını Oku</p> <i class="fa-solid fa-angle-right fa-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="basın_cards" style="margin-top: 2rem; height: 100%;">
+                    <div class="card" style=" min-width:200px; height: 47%;">
+                        <img class="card-img-top" src="img/edirne-arastirmalari-sempozyumu-basladi-14935650_300.png"
+                            alt="Card image" style="width:100%;height:65%; object-fit: cover;">
+                        <div class="card-body">
+                            <span>24.04.2023</span>
+                            <p class="card-text">Yöneticisi Doç Dr. Leyla Türker Şener’i
+                                İstanbul İşletme’mizde ağırladık.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="min-width:200px; height: 47%;">
+                        <img class="card-img-top" src="img/edirne-arastirmalari-sempozyumu-basladi-14935650_300.png"
+                            alt="Card image" style="width:100%; height: 65%;object-fit: cover;">
+                        <div class="card-body">
+                            <span>24.04.2023</span>
+                            <p class="card-text">Yöneticisi Doç Dr. Leyla Türker Şener’i
+                                İstanbul İşletme’mizde ağırladık.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="soru">
+            <div class="soru-cevap">
+
+                <div class="soru_sol">
+                    <h2>Dr. Mustafa Oral Öncül'e sorun yanıtlasın</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus minus ipsum vel, quam
+                        itaque dignissimos asperiores vero doloribus odit temporibus! Non, totam eius illo itaque sit
+                        voluptatum deleniti asperiores perferendis.</p>
+                    <button style="height: 2.7rem; display: flex; align-items: center; margin-top: 1.7rem;"
+                        type="button" class="btn btn-primary btn-lg"><a style="color: white;" href="">Detaylı
+                            Bilgi</a></button>
+                </div>
+                <div class="soru_sag">
+                    <div class="dikdortgen">
+                        <img src="img/pngegg (2).png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="calisma_alanlari">
+            <h1>Çalışma Alanları</h1>
+            <div class="calisma">
+                <div class="card" style="width:23.3%; height: 5%;">
+                    <img src="img2/person-doing-yoga-with-views-mount-ararat.png" style="height: 70%;"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="calisma_card_yazi_bir">Lorem Ipsum</h2>
+                    </div>
+                </div>
+                <div class="card" style="width:23.3%; height: 5%;">
+                    <img src="img2/person-doing-yoga-with-views-mount-ararat.png" style="height: 70%;"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="calisma_card_yazi_iki">Lorem Ipsum</h2>
+                    </div>
+                </div>
+                <div class="card" style="width:23.3%; height: 5%;">
+                    <img src="img2/person-doing-yoga-with-views-mount-ararat.png" style="height: 70%;"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="calisma_card_yazi_uc">Lorem Ipsum</h2>
+                    </div>
+                </div>
+                <div class="card" style="width:23.3%; height: 5%;">
+                    <img src="img2/person-doing-yoga-with-views-mount-ararat.png" style="height: 70%;"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="calisma_card_yazi_dort">Lorem Ipsum</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="manzara">
+            <div class="manzara_tirnak">
+                <div class="tirnak_yazi">
+                    <p> <i class="fa-solid fa-quote-left"
+                            style="font-size: 2.6rem; color: #ffffff; margin-right: 2rem; margin-top:-10rem;"></i>Lorem
+                        ipsum dolor sit amet
+                        consectetur adipisicing elit. Impedit doloremque non perspiciatis
+                        deleniti accusamus itaque, iusto sit obcaecati incidunt quae, quasi aliquam vitae. Ipsa eveniet
+                        in vel quae reiciendis at? <i class="fa-solid fa-quote-right"
+                            style="font-size: 2.6rem; color: #ffffff;margin-left: 1rem;  margin-top:10rem;"></i></p>
+                </div>
+            </div>
+        </section>
+        <section class="yararli_bilgiler">
+            <h1>Yararlı Bilgiler</h1>
+            <div class="yararli_bilgi">
+                <div class="yararli_bilgi_sol">
+                    <div class="card mb-3" style="width:100%;height: 99%;">
+                        <img src="img2/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-body-secondary">24.04.2023</small></p>
+                            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+                                beatae saepe,
+                                perspiciatis tempora odit neque corporis, recusandae maxime sunt earum inventore quia
+                                obcaecati tempore nisi ad dolores eius? Officia, .in</p>
+                            <button style="height: 2.7rem; display: flex; align-items: center;" type="button"
+                                class="btn btn-primary btn-lg"><a style="color: white;" href="">Detaylı Bilgi</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="yararli_bilgi_sag">
+                    <div class="card mb-3"
+                        style="min-width: 250px; height: 48%; border-radius: 1rem; text-shadow:3rem;">
+                        <div class="row g-0">
+                            <div class="col-md-6 col-sm-12">
+                                <img src="img2/beautiful-mountains-ratchaprapha-dam-khao-sok-national-park-surat-thani-province-thailand.png"
+                                    class="img-fluid rounded-start" style="border-radius: 1rem 0rem 0rem 1rem;"
+                                    alt="...">
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="card-body">
+                                    <p class="card-text"><small class="text-body-secondary">24.04.2023</small></p>
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                                    <button style="height: 2.7rem; display: flex; align-items: center;" type="button"
+                                        class="btn btn-primary btn-lg"><a style="color: white;" href="">Detaylı Bilgi</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3"
+                        style="min-width: 250px; height:48%; border-radius: 1rem; text-shadow: 3rem;">
+                        <div class="row g-0">
+                            <div class="col-md-6 col-sm-12">
+                                <img src="img2/beautiful-scenery-road-forest-with-lot-colorful-autumn-trees (1).png"
+                                    class="img-fluid rounded-start" style="border-radius: 1rem 0rem 0rem 1rem;"
+                                    alt="...">
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="card-body">
+                                    <p class="card-text"><small class="text-body-secondary">24.04.2023</small></p>
+                                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                                    <button style="height: 2.7rem; display: flex; align-items: center;" type="button"
+                                        class="btn btn-primary btn-lg"><a style="color: white;" href="">Detaylı Bilgi</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="aktiviteler">
+            <div class="aktivite">
+                <!-- <div class="golge">
+                        <img src="img/beautiful-scenery-road-forest-with-lot-colorful-autumn-trees (1).png" alt="">
+                    </div> -->
+                <h1>Aktiviteler</h1>
+                <div class="aktivite_cards">
+                    <div class="aktivite_card">
+                        <img src="img2/speaker-giving-talk-scientific-conference-audience-conference-hall-business-entrepreneurship-concept.png "
+                            alt="">
+                        <div class="aktivite_yazi">
+                            <div class="aktivite_yazi_sol">
+                                <span>24.04.2023</span>
+                                <h4>Lorem, ipsum dolor.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, autem voluptate
+                                    accusamus
+                                    perspiciatis molestias nemo id quod minima! Deleniti ex illum, animi quam
+                                    perferendis
+                                    consequatur in officia dolore dolores voluptate.</p>
+                            </div>
+                            <div class="aktivite_yazi_sag">
+                                <i class="fa-solid fa-angle-right fa-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aktivite_card">
+                        <img src="img2/happy-kids-elementary-school.png" alt="">
+                        <div class="aktivite_yazi">
+                            <div class="aktivite_yazi_sol">
+                                <span>24.04.2023</span>
+                                <h4>Lorem, ipsum dolor.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, autem voluptate
+                                    accusamus
+                                    perspiciatis molestias nemo id quod minima! Deleniti ex illum, animi quam
+                                    perferendis
+                                    consequatur in officia dolore dolores voluptate.</p>
+                            </div>
+                            <div class="aktivite_yazi_sag">
+                                <i class="fa-solid fa-angle-right fa-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aktivite_card">
+                        <img src="img2/rear-view-audience-speakers-stage-conference-hall.png" alt="">
+                        <div class="aktivite_yazi">
+                            <div class="aktivite_yazi_sol">
+                                <span>24.04.2023</span>
+                                <h4>Lorem, ipsum dolor.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, autem voluptate
+                                    accusamus
+                                    perspiciatis molestias nemo id quod minima! Deleniti ex illum, animi quam
+                                    perferendis
+                                    consequatur in officia dolore dolores voluptate.</p>
+                            </div>
+                            <div class="aktivite_yazi_sag">
+                                <i class="fa-solid fa-angle-right fa-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video_galeri">
+            <h1>Video Galeri</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-8"><iframe width="100%" height="315"
+                            src="https://www.youtube.com/embed/GlUnmEJd2XU" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></div>
+                    <div class="col-sm-12 col-md-12 col-lg-4"><iframe width="100%" height="315"
+                            src="https://www.youtube.com/embed/bOr45QNHljg" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-4"><iframe width="100%" height="315"
+                            src="https://www.youtube.com/embed/zwkvw7q_05M" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></div>
+                    <div class="col-sm-12 col-md-12 col-lg-4"><iframe width="100%" height="315"
+                            src="https://www.youtube.com/embed/lq6Y8Kr_Mn8" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></div>
+                    <div class="col-sm-12 col-md-12 col-lg-4"><iframe width="100%" height="315"
+                            src="https://www.youtube.com/embed/PxKBPLWYDtI" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></div>
+                </div>
+            </div>
+        </section>
+        <section class="uye_kurulus">
+            <h1>Üye Olduğum Kuruluşlar</h1>
+            <div class="uye">
+                <div class="uye_cards">
+                    <div class="uye_card">
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    <div class="uye_card">
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    <div class="uye_card">
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    <div class="uye_card">
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    <div class="uye_card">
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    <div class="uye_card">
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    <div class="uye_card">
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    <div class="uye_card">
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    <div class="uye_card">
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    <div class="uye_card">
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    <div class="uye_card">
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bize_ulasin">
+            <div class="ulasin">
+                <div class="ulasin_sol">
+                    <h4>Dr. Mustafa Oral Oncul</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eligendi ipsa nesciunt quaerat
+                        amet explicabo sequi possimus eveniet dicta ratione blanditiis cumque dolorum, nulla numquam
+                        eius velit officiis placeat fuga.</p>
+                    <div class="sosyal">
+                        <i class="fa-brands fa-instagram" style="font-size: 2.5rem; margin-right: 1rem;"></i>
+                        <i class="fa-brands fa-facebook-f" style="font-size: 2.5rem; margin-right: 1rem;"></i>
+                        <i class="fa-brands fa-twitter" style="font-size: 2.5rem; margin-right: 1rem;"></i>
+                        <i class="fa-brands fa-linkedin-in" style="font-size: 2.5rem;margin-right: 1rem;"></i>
+                    </div>
+                </div>
+                <div class="ulasin_orta_bir">
+                    <h4>Sayfalar</h4>
+                    <ul>
+                        <li><a href="index.html">Anasayfa</a></li>
+                        <li><a href="index.html">Hakkımızda</a></li>
+                        <li><a href="index.html">Faaliyetler</a></li>
+                        <li><a href="index.html">Video Galeri</a></li>
+                        <li><a href="index.html">Basından Haberler</a></li>
+                        <li><a href="index.html">Soru Cevap</a></li>
+                        <li><a href="index.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="ulasin_orta_iki">
+                    <h4>Lorem, ipsum.</h4>
+                    <ul>
+                        <li><a href="index.html">Anasayfa</a></li>
+                        <li><a href="index.html">Hakkımızda</a></li>
+                    </ul>
+                </div>
+                <div class="ulasin_sag">
+                    <h4>Bize Ulaşın</h4>
+                    <ul>
+                        <li> <i class="fa-solid fa-phone"></i> <a href="tel:+90 226 5422020/3653">+90 226 5422020/3653</a> </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+90 212 347 21 14">+90 212 347 21 14</a>
+                        </li>
+                        <li> <i class="fa-solid fa-envelope"></i> <a
+                                href="malito:oraloncul@istanbul.edu.tr">oraloncul@istanbul.edu.tr</a></li>
+                        <li> <i class="fa-solid fa-location-dot"></i> <a
+                                href="https://goo.gl/maps/yjdoWvgpc71amGG47">İstanbul Üniversitesi Istanbul Tıp
+                                Fakültesi
+                                Profesör İnfeksiyon Hastalıkları ve Klinik
+                                Mikrobiyoloji ABD Çapa, Istanbul, Turkey</a></li>
+                        <li> <i class="fa-solid fa-location-dot"></i> <a
+                                href="https://goo.gl/maps/H12nhnWEqiR6cwZ4A">Goztepe Mah. Tutuncu Mehmet Efendi Cad.
+                                Ihlamur Sok. Akan 2 Apt. No:18 Daire:38, 34600
+                                Kadıkoy - İstanbul, Turkey
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_mavi">
+                <div class="footer_yazi">
+                    <h4 class="footer_responsive_iki">Dr. Mustafa Oral Öncül</h4>
+                    <h4 class="footer_responsive">Tüm Hakları saklıdır @2023</h4>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="src/jquery.scrollUp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                clickable: true,
+            },
+
+        });
+    </script>
+
+</body>
+
+</html>
